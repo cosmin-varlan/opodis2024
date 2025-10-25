@@ -372,6 +372,23 @@ h6 {
   margin: 0;
 }
 
+.registerButton {
+  background: #f82249;
+  border: 0;
+  padding: 5px 15px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+  cursor: pointer;
+  border:2px solid white;
+}
+
+.registerButton:hover {
+  background: #ffffff;
+  color: #f82249;
+  border:2px solid #f82249;
+}
+
 /* Mobile Nav Toggle */
 
 #mobile-nav-toggle {
