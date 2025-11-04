@@ -3,12 +3,12 @@
 
 <head>
   <meta charset="utf-8">
-  <title>OPODIS 24 - The 28th International Conference on Principles of Distributed Systems</title>
+  <title>OPODIS 25 - The 29th International Conference on Principles of Distributed Systems</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
 
-  <!-- Favicons -->
+   <!-- Favicons -->
   <link href="img/favicon.png" rel="icon">
   <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
@@ -26,25 +26,20 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-    Theme Name: TheEvent
-    Theme URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
-    Author: BootstrapMade.com
-    License: https://bootstrapmade.com/license/
-  ======================================================= -->
 </head>
 
+<body>
 
-    <!--==========================
+
+  <!--==========================
     Header
   ============================-->
-  <header id="header">
+  <header id="header" class="noTrasparentHeader">
     <div class="container">
 
       <div id="logo" class="pull-left">
         <!-- Uncomment below if you prefer to use a text logo -->
-        <h1><a href="index.html"><span>OPODIS 2024</span></a></h1>
+        <h1><a href="index.html#intro">O<span>P</span>O<span>D</span>I<span>S</span>2025</a></h1>
         <!--a href="#intro" class="scrollto"><img src="img/logo-opodis.png" alt="" title=""></a-->
       </div>
 
@@ -52,15 +47,16 @@
         <ul class="nav-menu">
           <li><a href="index.html#intro">Home</a></li>
            <!--li><a href="index.html#about">About</a></li-->
-          <li><a href="index.html#speakers">Keynotes</a></li>
+          <li class="menu-active"><a href="index.html#speakers">Keynotes</a></li>
           <li><a href="cfp.html">CFP</a></li>
           <li><a href="cfp.html#dates">Dates</a></li>
           <li><a href="index.html#committees">Committees</a></li>
           <li><a href="accepted-papers.html">Papers</a></li>
-          <li><a href="program.html">Program</a></li>
+          <!--li><a href="program.html">Program</a></li--> 
           <li><a href="index.html#venue">Venue</a></li> 
-          <!--<li><a href="index.html#travel">Travel</a></li>
-          <li><a href="index.html#hotels">Hotels</a></li> -->
+          <li><a href="index.html#travel">Travel</a></li>
+          <li><a href="index.html#sponsors">Sponsors</a></li>   <!-- Decomenteaza linia asta pentru sponsori -->
+          <!-- <li><a href="index.html#hotels">Hotels</a></li> -->
           <li><a href="index.html#subscribe">Registration</a></li>
           <!--<li><a href="index.html#supporters">Sponsors</a></li>
           <li><a href="index.html#contact">Contact</a></li-->
@@ -68,6 +64,8 @@
       </nav><!-- #nav-menu-container -->
     </div>
   </header><!-- #header -->
+  <br/>
+  
 
   <main id="main" class="main-page">
 
@@ -77,28 +75,40 @@
     <section id="speakers-details" class="wow fadeIn">
       <div class="container">
         <div class="section-header">
-          <h2>Alberto Sonnino</h2> 
-          <h3 class="subtitleBioUniversity">Mysten Labs &amp; University College London
-          </h3>
-          <!-- <p>18 December 2019, Room ALG, 9:20am</p> -->
-        </div> <!--(date here, title to be announced) -->
+          <h2>Yvonne-Anne Pignolet</h2> 
+          <h3 class="subtitleBioUniversity">The DFINITY Foundation</h3>
+
+        </div> 
 
         <div class="row">
           <div class="col-md-6">
-            <img src="img/speakers/sonnino.jpg" alt="Alberto Sonnino" class="img-fluid">
+            <img src="img/speakers/yvonneannepignolet.png" alt="Yvonne-Anne Pignolet" class="img-fluid">
           </div>
 
           <div class="col-md-6">
             <div class="details">
-              <h3>BFT Consensus: From Academic Paper to Mainnet</h3>
-              <p>This talk shares our journey in bringing Byzantine Fault Tolerant (BFT) consensus from academic papers to operational blockchain networks. It begins in 2019 with our initial effort as researchers and engineers at Facebook to deploy the HotStuff consensus protocol at the heart of the Libra blockchain. We present how this journey led to modifications from the original theoretical design and the eventual migration to DAG-based systems, now implemented in the Sui blockchain and gaining traction across the blockchain space. We outline the numerous research and engineering challenges we faced at every step of this journey, describe how we addressed some of these challenges, and point out which ones remain open questions and require further research. The goal of this talk is to offer a different perspective on BFT consensus, focusing on the needs of real-world blockchains and offering insights that may not be visible from research papers alone.</p>
+
+              <h3>From Principles to Practice: Algorithmic Insights from Building the Internet Computer</h3>
+
+              <p>
+                The theoretical bedrock of distributed computing rests on foundational primitives: peer-to-peer protocols, Byzantine fault tolerance, state machine replication. But what happens when these principles are stretched to a global, evolving, decentralized compute platform intended to host arbitrary applications? 
+For the past seven years, our work has been dedicated to answering that question through the Internet Computer (IC), a public blockchain network designed for large-scale, general-purpose computation. The IC acts as a stateful serverless cloud, running over 900K applications for millions of users by implementing the Internet Computer Protocol (ICP) in a sharded, Byzantine fault-tolerant setup. 
+This talk explores the algorithmic insights gained from this journey. We will confront where our cherished theoretical models were challenged and had to be radically adapted, composed, or re-imagined. Specifically, we will dive into core problems like: 
+<ul>
+<li> Scalable orchestration: Asynchronous and trustless composition of independent state machines. </li>
+<li> Taming Non-Determinism: Designing protocols that allow deterministic replicated state machines to securely query external data. </li>
+<li> The Paradox of Immutability: Enabling stateful upgrades for decentralized applications and even the underlying protocol stack without sacrificing security. </li>
+</ul>
+I will share the successful design patterns that emerged, detail which core protocols stood the test of time, and which others we overhauled. Finally, I will discuss the hard and sometimes surprising trade-offs we made and pose open research questions to address when designing the next generation of decentralized systems.
+
+              </p>
               <p>&nbsp;</p>
               <h3>About the speaker</h3>
 
 
-              <p>Alberto Sonnino is a research scientist at Mysten Labs working on the Sui blockchain. I am also affiliated with the computer science department of University College London (UCL).
-                His research interests are in distributed systems, blockchains, and privacy enhancing technologies. These days he mostly work on Byzantine fault tolerant systems for blockchain applications including consensus protocols, consensus-less (broadcast-based) algorithms, and distributed execution engines. He spend most of his time developing new algorithm to produce more performant distributed systems. A key aspect of his work is to leverage all the resources available to the machine and scale blockchain validators to run on multiple machines.
-                The typical goal of his projects is to go beyond the research stage, I spend considerable effort to implement and evaluate systems to ultimately run them in production.
+              <p>Yvonne-Anne Pignolet’s research is centered around distributed systems, ranging from the design and analysis of algorithms for reliable and efficient distributed systems despite failures and malicious behavior to complex network analysis. She obtained a Ph.D. in Computer Science from ETH Zurich, Switzerland in 2009. After 10 years of working in industrial research labs at IBM and ABB, Yvonne-Anne joined DFINITY in 2019, where she leads teams of researchers and engineers building and improving the Internet Computer. 
+                
+
 
               </p>
 
@@ -114,6 +124,7 @@
   </main>
 
 
+  
   <!--==========================
     Footer
   ============================-->
@@ -124,7 +135,7 @@
 
           <div class="col-lg-3 col-md-6 footer-info">
             <img src="img/logo-opodis.png" alt="OPODIS'24">
-            <p>OPODIS'24 is an open forum for the exchange of state-of-the-art knowledge concerning distributed computing and distributed computer systems. All aspects of distributed systems are within the scope of OPODIS, including theory, specification, design, performance, and system building.</p>
+            <p>OPODIS'25 is an open forum for the exchange of state-of-the-art knowledge concerning distributed computing and distributed computer systems. All aspects of distributed systems are within the scope of OPODIS, including theory, specification, design, performance, and system building.</p>
           </div>
 
           <!--div class="col-lg-3 col-md-6 footer-links">
@@ -141,10 +152,10 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="fa fa-university"></i> <a href="https://www.imtlucca.it/en">IMT School for Advanced Studies Lucca</a></li>
+              <li><i class="fa fa-university"></i> <a href="https://www.uaic.ro/en/">Alexandru Ioan Cuza University of Iaşi</a></li>
               <li><i class="fa fa-angle-right"></i> <a href="https://www.opodis.net">OPODIS conference series</a></li>
-              <li><i class="fa fa-angle-right"></i> <a href="https://www.turismo.lucca.it/en">Lucca Tourist Office</a></li>
-              <!--li><i class="fa fa-angle-right"></i> <a href="#">Terms of service</a></li-->
+              <li><i class="fa fa-angle-right"></i> <a href="https://www.turism-iasi.ro/en/home-en/">Iaşi Tourist Office</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="https://sctpiasi.ro/en/routes/touristic">Iaşi Public Transport</a></li>
               <!--li><i class="fa fa-angle-right"></i> <a href="#">Privacy policy</a></li-->
             </ul>
           </div>
@@ -152,10 +163,12 @@
           <div class="col-lg-3 col-md-6 footer-contact">
             <h4>Contact Us</h4>
             <p>
-              Dr. Letterio Galletta<br>
-              OPODIS 2024 General Chair<br>
-              Italy<br>
-              <strong>Email:</strong> <a href="mailto:letterio.galletta@imtlucca.it">letterio.galletta@imtlucca.it</a><br>
+              Dr. Emanuel Onica<br/>
+              OPODIS 2025 General Chair<br/>
+              <strong>Email:</strong> emanuel.onica@info.uaic.ro<br/>
+	            Lucian Gâdioi<br/>
+	            OPODIS 2025 Financial Chair<br/>
+	            <strong>Email:</strong> lucian.gadioi@info.uaic.ro<br/>
             </p>
             <!--
             <div class="social-links">
